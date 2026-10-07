@@ -1,0 +1,49 @@
+body {
+  background:#111;
+  color:white;
+  text-align:center;
+  font-family:Arial;
+}
+
+h1 {
+  color:#00e5ff;
+}
+
+#maze {
+  display:grid;
+  width:max-content;
+  margin:20px auto;
+}
+
+.cell {
+  width:25px;
+  height:25px;
+  border:1px solid #222;
+  box-sizing:border-box;
+}
+
+.wall { background:#333; }
+.player { background:#00e5ff; }
+.goal { background:#00ff00; }
+.path { background:#ffd700; }
+
+button,select {
+  padding:9px;
+  margin:5px;
+  border:0;
+  border-radius:5px;
+}
+
+button {
+  background:#008fb3;
+  color:white;
+  cursor:pointer;
+}
+
+.stats {
+  background:#222;
+  width:250px;
+  margin:auto;
+  padding:10px;
+  border-radius:10px;
+}

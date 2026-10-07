@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Maze Escape</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🧠 AI Maze Escape</h1>
+
+<div class="controls">
+
+  <select id="level" onchange="newMaze()">
+    <option value="11">Easy</option>
+    <option value="15" selected>Medium</option>
+    <option value="21">Hard</option>
+  </select>
+
+  <select id="algorithm">
+    <option>A*</option>
+    <option>BFS</option>
+    <option>DFS</option>
+    <option>Dijkstra</option>
+  </select>
+
+  <button onclick="solveAI()">🤖 Solve AI</button>
+  <button onclick="newMaze()">🎲 New Maze</button>
+  <button onclick="resetPlayer()">🔄 Reset</button>
+
+</div>
+
+<div id="maze"></div>
+
+<div class="stats">
+  <p>Level: <b id="levelName">Medium</b></p>
+  <p>Mode: <b id="mode">Player</b></p>
+  <p>Moves: <b id="moves">0</b></p>
+  <p>Path Length: <b id="path">-</b></p>
+  <p>Time: <b id="time">0</b> sec</p>
+</div>
+
+<p>🎮 Use Arrow Keys to play</p>
+
+<script src="game.js"></script>
+
+</body>
+</html>
